@@ -1,15 +1,19 @@
-const http = require('http');
-const hostname = '127.0.0.1';
-const port = 3000;
+var express = require('express');
+var appli = express();
 
-const server = http.createServer(
-	(request,response) => {
-	response.statutsCode = 200;
-	response.setHeader('Content-Type', 'text/plain');
-	response.end('Salutttt');
-	}
-);
+appli.get('/',function (request,response){
+   response.send('salut mon pote'); 
+});
+appli.get(
+    '/user',
+    function (request,response){
+        var retour = {
+            nom : "michel",
+            prenom : "robert"
+        };
+        response.send(retour); 
+});
 
-server.listen(port, hostname, function(){
-	console.log('jecoute' + hostname + ":" + port );
+appli.listen(3000,function () {
+    console.log('il ecoute rien du tout');
 });
