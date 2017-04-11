@@ -1,0 +1,22 @@
+{
+  "name": "firstlaunchnode",
+  "version": "1.0.0",
+  "description": "initiation to node.js",
+  "main": "serveur.js",
+  "scripts": {
+    "test": "node serveur.js"
+  },
+  "dependencies":{
+    "express": "4.13.3"    
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://hm34400@github.com/hm34400/firstLaunchNode"
+  },
+  "author": "hicham",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hm34400/firstLaunchNode/issues"
+  },
+  "homepage": "https://github.com/hm34400/firstLaunchNode#readme"
+}
